@@ -1,15 +1,16 @@
-function ExpanseItem(){
-    return <div>
-        <p>Food - $5</p>
-        <p>Petrol - $20</p>
-        <p>Movie - $10</p>
-        <div>Date</div>
-        <div>
-            <h1>book</h1>
-            <div>$10</div>
-            <div>Delhi</div>
-        </div>
+import "./ExpenseItem.css";
+
+function ExpenseItem() {
+  return (
+    <div className="expense-item">
+      <div>15 August 2023</div>
+      <div className="expense-item__description">
+        <h2>Book</h2>
+        <div className="expense-item__price">$10</div>
+        <div className="expense-item__location">Delhi</div>
+      </div>
     </div>
+  );
 }
 
-export default ExpanseItem;
+export default ExpenseItem;
