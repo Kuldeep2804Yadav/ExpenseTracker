@@ -1,10 +1,10 @@
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
-    let expenseDate = new Date(2023,7,15).toISOString()
-    let expenseTitle= "Book"
-    let expensePrice =10
-    let expenseLocation="Bangalore"
+function ExpenseItem(props) {
+    let expenseDate = props.date.toISOString()
+    let expenseTitle=props.title
+    let expensePrice =props.price
+    let expenseLocation=props.location
   return (
     <div className="expense-item">
       <div>{expenseDate}</div>
