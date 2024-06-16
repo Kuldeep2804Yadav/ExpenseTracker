@@ -12,7 +12,7 @@ function Expenses(props) {
             title={expense.title}
             price={expense.price}
             location={expense.location}
-          ></ExpenseItem>
+          />
         );
       })}
     </div>
