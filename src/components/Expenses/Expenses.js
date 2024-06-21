@@ -10,10 +10,9 @@ function Expenses(props) {
         return (
           <ExpenseItem
             key={expense.id}
-            date={expense.date}
             title={expense.title}
+            date={expense.date}
             price={expense.price}
-            location={expense.location}
           />
         );
       })}
