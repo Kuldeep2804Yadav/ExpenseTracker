@@ -42,6 +42,7 @@ let ExpenseForm = (props) => {
             onChange={titleChangeHandler}
           ></input>
         </div>
+
         <div className="new-expense__control">
           <label htmlFor="amount">Amount</label>
           <input
@@ -64,6 +65,7 @@ let ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+      <button onClick={props.onCancel}>Cancel</button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
